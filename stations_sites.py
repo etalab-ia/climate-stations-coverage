@@ -4,14 +4,14 @@ import json
 import numpy as np
 from typing import List, Tuple
 import folium
-
 # from screened_sites import low_coverage_sites
 
 
-def add_geometry(threshold: float = 0) -> None:
+def add_geometry(threshold:float=0) -> None:
     """
-    Geocode json list of State's properties and output the .geojson file.
+    Geocode json list of State's properties and output the .geojson file. 
     Use a threshold in [0,1] to be applied on geocoding score
+    The State's properties json file is open data from data.gouv.fr
     """
     coordinates_dict = {}
     with open("inventaire-immobilier-de-letat.json") as f:
@@ -50,14 +50,23 @@ def add_geometry(threshold: float = 0) -> None:
     return
 
 
-def load_stations_coordinates() -> List[Tuple[float]]:
+def load_stations_coordinates() -> List[List[float]]:
+    """
+    Stations geojson is open data from : https://www.infoclimat.fr/opendata/stations_xhr.php?format=geojson
+
+    Returns:
+        List[List[float]]: _description_
+    """
     stations = gpd.read_file("stations.geojson")
     return [[p.y, p.x] for p in stations.geometry]
 
 
-def load_candidate_site_coordinates() -> List[Tuple[float]]:
+def load_candidate_site_coordinates() -> List[List[float]]:
+    """
+    The files here is basically a geocoding of the dictionary of low_coverage_sites that we have previously screened
+    """
     coords = []
-    for _, p in gpd.read_file("ALREADY_SAVED_INTERESTING_SITES.geojson").iterrows():
+    for _,p in gpd.read_file("ALREADY_SAVED_INTERESTING_SITES.geojson").iterrows():
         if not pd.isna(p.lat) and not pd.isna(p.lat):
             coords.append([p.lat, p.lon])
     return coords
@@ -65,13 +74,14 @@ def load_candidate_site_coordinates() -> List[Tuple[float]]:
 
 def load_candidate_addresses() -> List[str]:
     """
+    The files here is basically a geocoding of the dictionary of low_coverage_sites that we have previously screened
     Aligned with ``load_candidate_site_coordinates``
 
     Returns:
         Lits[str]: list of addresses text fields combining city names, street names and building function
     """
     addresses = []
-    for _, p in gpd.read_file("ALREADY_SAVED_INTERESTING_SITES.geojson").iterrows():
+    for _,p in gpd.read_file("ALREADY_SAVED_INTERESTING_SITES.geojson").iterrows():
         content = ""
         if not pd.isna(p.lat) and not pd.isna(p.lat):
             if p.ville:
@@ -84,8 +94,10 @@ def load_candidate_addresses() -> List[str]:
     return addresses
 
 
-def save_map():
-    """ """
+def save_map() -> None:
+    """ 
+    Save a .html where ticks with stations are put on open street view
+    """
     site_coords = load_stations_coordinates()
     cand_coords = load_candidate_site_coordinates()
     cand_towns = load_candidate_addresses()
