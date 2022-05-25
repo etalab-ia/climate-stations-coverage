@@ -4,7 +4,7 @@ import json
 import numpy as np
 from typing import List, Tuple
 import folium
-# from screened_sites import low_coverage_sites
+from screened_sites import low_coverage_sites
 
 
 def add_geometry(threshold:float=0) -> None:
@@ -92,6 +92,21 @@ def load_candidate_addresses() -> List[str]:
                 content += p.fonction
             addresses.append(content)
     return addresses
+
+
+def geocode_interesting_sites():
+    """
+    Geocode the list of interesting sites that have "manually" screened
+    At this point there is no regularization of city names, so this is really a basic version0
+    """
+    properties = gpd.read_file("inventaire-immobilier-de-letat_geocoded.geojson")
+
+    interesting_sites = np.concatenate(list(low_coverage_sites.values()))
+    properties["major-interest"] = properties["ville"].map(
+        lambda ville: ville in interesting_sites
+    )
+    major_interest = properties[properties["major-interest"]]
+    major_interest.to_file("ALREADY_SAVED_INTERESTING_SITES.geojson")
 
 
 def save_map() -> None:
