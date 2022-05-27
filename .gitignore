@@ -1,2 +1,4 @@
 *.html
 *.geojson
+*.csv
+*.json
