@@ -8,12 +8,11 @@ from screened_sites import low_coverage_sites
 
 DEPARTEMENTS = np.concatenate(
     (
-        np.arange(1, 20),
+        np.arange(1, 20), # No number 20 (old for Corsica)
         np.arange(21, 96),
-        [97, 99],
-        np.arange(971, 979),
-        [986, 987, 988, 989],
-        ["2A", "2B"],
+        np.arange(971, 975), # DROM
+        [976, 977, 978, 986, 987], # COM
+        ["2A", "2B"], # Corsica
     )
 )
 
