@@ -1,0 +1,3099 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b39b2235b9d3107eb56f763eaeaa8fb0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b39b2235b9d3107eb56f763eaeaa8fb0" ></div>
+        
+</body>
+<script>    
+    
+            var map_b39b2235b9d3107eb56f763eaeaa8fb0 = L.map(
+                "map_b39b2235b9d3107eb56f763eaeaa8fb0",
+                {
+                    center: [47.100211, -56.3811],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7e49abe8cd37a04a10dbf02cbe68d2f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var marker_a7248ff65555c7650dafcd4160c16f1c = L.marker(
+                [47.100211, -56.3811],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ece93320e9a914581643b8d6c862e1fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7248ff65555c7650dafcd4160c16f1c.setIcon(icon_ece93320e9a914581643b8d6c862e1fe);
+        
+    
+        var popup_12ac8598b91ccb8cf8c886500215ff12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d00ceea6ba4ee1c168d4050f6ecf28a = $(`<div id="html_7d00ceea6ba4ee1c168d4050f6ecf28a" style="width: 100.0%; height: 100.0%;"></div>`)[0];
+            popup_12ac8598b91ccb8cf8c886500215ff12.setContent(html_7d00ceea6ba4ee1c168d4050f6ecf28a);
+        
+
+        marker_a7248ff65555c7650dafcd4160c16f1c.bindPopup(popup_12ac8598b91ccb8cf8c886500215ff12)
+        ;
+
+        
+    
+    
+            marker_a7248ff65555c7650dafcd4160c16f1c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e99a1209082d40d4955d3f45e6321ed1 = L.marker(
+                [43.38909, -1.659811],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_e26f45201a5bb9518316e2ac25b4b326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e99a1209082d40d4955d3f45e6321ed1.setIcon(icon_e26f45201a5bb9518316e2ac25b4b326);
+        
+    
+        var popup_150612e6e6a9f9ca96ea5e5be8426115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0a974100e7634d59708ce4c4fe7ed13 = $(`<div id="html_f0a974100e7634d59708ce4c4fe7ed13" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_Route DE GALANTRY_Ouvrage de signalisation</i></div>`)[0];
+            popup_150612e6e6a9f9ca96ea5e5be8426115.setContent(html_f0a974100e7634d59708ce4c4fe7ed13);
+        
+
+        marker_e99a1209082d40d4955d3f45e6321ed1.bindPopup(popup_150612e6e6a9f9ca96ea5e5be8426115)
+        ;
+
+        
+    
+    
+            marker_e99a1209082d40d4955d3f45e6321ed1.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0f30cc4e6f386f78de23db56f881146 = L.marker(
+                [-21.273853, 55.516752],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_dfd8f8fc3106521936eab2057068ece5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0f30cc4e6f386f78de23db56f881146.setIcon(icon_dfd8f8fc3106521936eab2057068ece5);
+        
+    
+        var popup_ac77dfee02871a4c857dee4f012af656 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4fda3672ad49420ec83f38cef14434c = $(`<div id="html_d4fda3672ad49420ec83f38cef14434c" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Route DE LA POINTE BLANCHE_Aire de stationnement</i></div>`)[0];
+            popup_ac77dfee02871a4c857dee4f012af656.setContent(html_d4fda3672ad49420ec83f38cef14434c);
+        
+
+        marker_e0f30cc4e6f386f78de23db56f881146.bindPopup(popup_ac77dfee02871a4c857dee4f012af656)
+        ;
+
+        
+    
+    
+            marker_e0f30cc4e6f386f78de23db56f881146.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80a6a745d25ebe6aafa0f4eb152de25d = L.marker(
+                [49.358762, -0.877732],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_858a6ad84bd442e0429ca668c7baae05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80a6a745d25ebe6aafa0f4eb152de25d.setIcon(icon_858a6ad84bd442e0429ca668c7baae05);
+        
+    
+        var popup_821a2920cf5cdbd54c8fcedc865e6d51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6159a3a91cbac7d4f886e04f65bdc313 = $(`<div id="html_6159a3a91cbac7d4f886e04f65bdc313" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  BD DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_821a2920cf5cdbd54c8fcedc865e6d51.setContent(html_6159a3a91cbac7d4f886e04f65bdc313);
+        
+
+        marker_80a6a745d25ebe6aafa0f4eb152de25d.bindPopup(popup_821a2920cf5cdbd54c8fcedc865e6d51)
+        ;
+
+        
+    
+    
+            marker_80a6a745d25ebe6aafa0f4eb152de25d.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a64121373ae3113d08918f1236fc2b90 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_80636f515b53d286f7c60f0104a119cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a64121373ae3113d08918f1236fc2b90.setIcon(icon_80636f515b53d286f7c60f0104a119cb);
+        
+    
+        var popup_ddf1f6feb19999bd2629a1191219a07f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1240a419b9c53703d65f8d9dcb2e7216 = $(`<div id="html_1240a419b9c53703d65f8d9dcb2e7216" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  AERODROME DE SAINT PIERRE POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_ddf1f6feb19999bd2629a1191219a07f.setContent(html_1240a419b9c53703d65f8d9dcb2e7216);
+        
+
+        marker_a64121373ae3113d08918f1236fc2b90.bindPopup(popup_ddf1f6feb19999bd2629a1191219a07f)
+        ;
+
+        
+    
+    
+            marker_a64121373ae3113d08918f1236fc2b90.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_908d57095be1940f4641e6ef0416a5b1 = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_f6dfeda36be05d75053ac6d000e9f841 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_908d57095be1940f4641e6ef0416a5b1.setIcon(icon_f6dfeda36be05d75053ac6d000e9f841);
+        
+    
+        var popup_73a1e119898acd3e36d1c2187fe80c41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f817a1f285c987dc949d47a16651394 = $(`<div id="html_6f817a1f285c987dc949d47a16651394" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6 Rue MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_73a1e119898acd3e36d1c2187fe80c41.setContent(html_6f817a1f285c987dc949d47a16651394);
+        
+
+        marker_908d57095be1940f4641e6ef0416a5b1.bindPopup(popup_73a1e119898acd3e36d1c2187fe80c41)
+        ;
+
+        
+    
+    
+            marker_908d57095be1940f4641e6ef0416a5b1.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db0975cdd7aa97d2f6748e517bc7dfa4 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ac97a52652d3da46d09fbbe855eb2944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db0975cdd7aa97d2f6748e517bc7dfa4.setIcon(icon_ac97a52652d3da46d09fbbe855eb2944);
+        
+    
+        var popup_90ff629c11c538b141900cd1884d8ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dc8a49f808045fcc2d7fbd2cd60b856 = $(`<div id="html_3dc8a49f808045fcc2d7fbd2cd60b856" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 . AERODROME DE SAINT-PIERRE-POINTE-BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_90ff629c11c538b141900cd1884d8ec2.setContent(html_3dc8a49f808045fcc2d7fbd2cd60b856);
+        
+
+        marker_db0975cdd7aa97d2f6748e517bc7dfa4.bindPopup(popup_90ff629c11c538b141900cd1884d8ec2)
+        ;
+
+        
+    
+    
+            marker_db0975cdd7aa97d2f6748e517bc7dfa4.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa7ecd92d4a9c01168fd8e8a3128cb5 = L.marker(
+                [49.965976, 1.220595],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_fb49b4aff1836cdf3ecd01b46c055fb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4aa7ecd92d4a9c01168fd8e8a3128cb5.setIcon(icon_fb49b4aff1836cdf3ecd01b46c055fb2);
+        
+    
+        var popup_17a7279d9851fe92eb2e4a5920d92d6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c30cff61d07608d4a4b1c6599840d49 = $(`<div id="html_7c30cff61d07608d4a4b1c6599840d49" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8  R DES PETITS PECHEURS_Immeuble de bureaux</i></div>`)[0];
+            popup_17a7279d9851fe92eb2e4a5920d92d6d.setContent(html_7c30cff61d07608d4a4b1c6599840d49);
+        
+
+        marker_4aa7ecd92d4a9c01168fd8e8a3128cb5.bindPopup(popup_17a7279d9851fe92eb2e4a5920d92d6d)
+        ;
+
+        
+    
+    
+            marker_4aa7ecd92d4a9c01168fd8e8a3128cb5.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c619dbe277e3ccb8384279abae62cf9 = L.marker(
+                [14.535562, -61.069856],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_173fa7880ee54bf0a2ff6055545e4ff8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c619dbe277e3ccb8384279abae62cf9.setIcon(icon_173fa7880ee54bf0a2ff6055545e4ff8);
+        
+    
+        var popup_f9467189aae456994598dbda48907afd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81e8f59a4aedf249c33631bf655f5818 = $(`<div id="html_81e8f59a4aedf249c33631bf655f5818" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 POINTE BLANCHE_Inst. prod. ou transf. énergie</i></div>`)[0];
+            popup_f9467189aae456994598dbda48907afd.setContent(html_81e8f59a4aedf249c33631bf655f5818);
+        
+
+        marker_6c619dbe277e3ccb8384279abae62cf9.bindPopup(popup_f9467189aae456994598dbda48907afd)
+        ;
+
+        
+    
+    
+            marker_6c619dbe277e3ccb8384279abae62cf9.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_423eeb16a60dbb94d3e3ec1688d675a1 = L.marker(
+                [48.651196, -1.995025],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_0e91e7cff4e6faca1f8e7fbdda59b263 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_423eeb16a60dbb94d3e3ec1688d675a1.setIcon(icon_0e91e7cff4e6faca1f8e7fbdda59b263);
+        
+    
+        var popup_b4639f9c6138905772d990473f57e95f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b43b1ce014850f2e89104911ecb7eda2 = $(`<div id="html_b43b1ce014850f2e89104911ecb7eda2" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_Boulevard THELOT_Ouvrage de signalisation</i></div>`)[0];
+            popup_b4639f9c6138905772d990473f57e95f.setContent(html_b43b1ce014850f2e89104911ecb7eda2);
+        
+
+        marker_423eeb16a60dbb94d3e3ec1688d675a1.bindPopup(popup_b4639f9c6138905772d990473f57e95f)
+        ;
+
+        
+    
+    
+            marker_423eeb16a60dbb94d3e3ec1688d675a1.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbb9b2f25dab4b88981a4497c240f2a3 = L.marker(
+                [46.492374, -1.772791],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_1025889f76af7ae4eceb0b9767872f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbb9b2f25dab4b88981a4497c240f2a3.setIcon(icon_1025889f76af7ae4eceb0b9767872f8c);
+        
+    
+        var popup_1f76c948d65cdd8e7f0650146183d3d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c92a244d55248fdeb23de2522a5397a8 = $(`<div id="html_c92a244d55248fdeb23de2522a5397a8" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_20 R DES MIQUELONNAIS_Terrain en friche</i></div>`)[0];
+            popup_1f76c948d65cdd8e7f0650146183d3d2.setContent(html_c92a244d55248fdeb23de2522a5397a8);
+        
+
+        marker_cbb9b2f25dab4b88981a4497c240f2a3.bindPopup(popup_1f76c948d65cdd8e7f0650146183d3d2)
+        ;
+
+        
+    
+    
+            marker_cbb9b2f25dab4b88981a4497c240f2a3.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60df2d8cd145a5de9da7d3d0ec4e438c = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_33270326ef0f80b0677bab786f09711b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60df2d8cd145a5de9da7d3d0ec4e438c.setIcon(icon_33270326ef0f80b0677bab786f09711b);
+        
+    
+        var popup_63efd00bfea1faceba059546263c4967 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cefafcfaf8682b19c6822979992453e1 = $(`<div id="html_cefafcfaf8682b19c6822979992453e1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6 Rue MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_63efd00bfea1faceba059546263c4967.setContent(html_cefafcfaf8682b19c6822979992453e1);
+        
+
+        marker_60df2d8cd145a5de9da7d3d0ec4e438c.bindPopup(popup_63efd00bfea1faceba059546263c4967)
+        ;
+
+        
+    
+    
+            marker_60df2d8cd145a5de9da7d3d0ec4e438c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c5dbf3b3bb24b42baa957deb9fd021e = L.marker(
+                [-21.273853, 55.516752],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_d24aa823d5aace8bdfe0553253fd9b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c5dbf3b3bb24b42baa957deb9fd021e.setIcon(icon_d24aa823d5aace8bdfe0553253fd9b29);
+        
+    
+        var popup_2238ce0035c5ce5488d13412dba19af7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59de50fd2cd79d9c83195aa2aa3c4a50 = $(`<div id="html_59de50fd2cd79d9c83195aa2aa3c4a50" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Route DE LA POINTE BLANCHE_Centre de recherche ou d'essai</i></div>`)[0];
+            popup_2238ce0035c5ce5488d13412dba19af7.setContent(html_59de50fd2cd79d9c83195aa2aa3c4a50);
+        
+
+        marker_2c5dbf3b3bb24b42baa957deb9fd021e.bindPopup(popup_2238ce0035c5ce5488d13412dba19af7)
+        ;
+
+        
+    
+    
+            marker_2c5dbf3b3bb24b42baa957deb9fd021e.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d592108978e9fee1f6c8565b87c4c71e = L.marker(
+                [-21.294116, 55.498253],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_261edf510567efe3017868579a7c0400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d592108978e9fee1f6c8565b87c4c71e.setIcon(icon_261edf510567efe3017868579a7c0400);
+        
+    
+        var popup_5af0cce91f04ed730eb65a6e97832d60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99f5f008b8c363e0fa0920f8e3770468 = $(`<div id="html_99f5f008b8c363e0fa0920f8e3770468" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Champ d'exercice</i></div>`)[0];
+            popup_5af0cce91f04ed730eb65a6e97832d60.setContent(html_99f5f008b8c363e0fa0920f8e3770468);
+        
+
+        marker_d592108978e9fee1f6c8565b87c4c71e.bindPopup(popup_5af0cce91f04ed730eb65a6e97832d60)
+        ;
+
+        
+    
+    
+            marker_d592108978e9fee1f6c8565b87c4c71e.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58ebda48e645655a13ace730fe02bf8b = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ada5af4f450f4b52acba9253b2a3ef6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58ebda48e645655a13ace730fe02bf8b.setIcon(icon_ada5af4f450f4b52acba9253b2a3ef6c);
+        
+    
+        var popup_1a5dc43c2be853b67a1414a78ada9e8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_023154e97dd566e4ef5a6c0e165bc688 = $(`<div id="html_023154e97dd566e4ef5a6c0e165bc688" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 . AERODROME DE SAINT-PIERRE-POINTE-BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_1a5dc43c2be853b67a1414a78ada9e8e.setContent(html_023154e97dd566e4ef5a6c0e165bc688);
+        
+
+        marker_58ebda48e645655a13ace730fe02bf8b.bindPopup(popup_1a5dc43c2be853b67a1414a78ada9e8e)
+        ;
+
+        
+    
+    
+            marker_58ebda48e645655a13ace730fe02bf8b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc66370b34b65ee50a2ed9ab66b22ac0 = L.marker(
+                [49.343822, -0.746442],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_0bcb8213786a82cf6383f1f41fde3a53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc66370b34b65ee50a2ed9ab66b22ac0.setIcon(icon_0bcb8213786a82cf6383f1f41fde3a53);
+        
+    
+        var popup_7b499a09d8d95a3e36d5a0a90a212eb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52775e09fcd7ec9438fb01d385ef38cd = $(`<div id="html_52775e09fcd7ec9438fb01d385ef38cd" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_BD PORT EN BESSIN_Immeuble de bureaux</i></div>`)[0];
+            popup_7b499a09d8d95a3e36d5a0a90a212eb7.setContent(html_52775e09fcd7ec9438fb01d385ef38cd);
+        
+
+        marker_bc66370b34b65ee50a2ed9ab66b22ac0.bindPopup(popup_7b499a09d8d95a3e36d5a0a90a212eb7)
+        ;
+
+        
+    
+    
+            marker_bc66370b34b65ee50a2ed9ab66b22ac0.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa8e6b2c8d50f4c161e4287b625ff270 = L.marker(
+                [14.758949, -61.18694],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_826b26479b8f66dec97782bb21f4c999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa8e6b2c8d50f4c161e4287b625ff270.setIcon(icon_826b26479b8f66dec97782bb21f4c999);
+        
+    
+        var popup_c102b27d58fcf95e42ed1de906b5ab76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_872b714932ae65cc3ff88b9a0251b3a7 = $(`<div id="html_872b714932ae65cc3ff88b9a0251b3a7" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_Terrain en friche</i></div>`)[0];
+            popup_c102b27d58fcf95e42ed1de906b5ab76.setContent(html_872b714932ae65cc3ff88b9a0251b3a7);
+        
+
+        marker_aa8e6b2c8d50f4c161e4287b625ff270.bindPopup(popup_c102b27d58fcf95e42ed1de906b5ab76)
+        ;
+
+        
+    
+    
+            marker_aa8e6b2c8d50f4c161e4287b625ff270.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efc68b451f3fe2837e4f6cead81b639c = L.marker(
+                [-21.361731, 55.532391],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_2527270aab4dcdd976a75df37b9bd9b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efc68b451f3fe2837e4f6cead81b639c.setIcon(icon_2527270aab4dcdd976a75df37b9bd9b8);
+        
+    
+        var popup_be049e96476a92be8d4aad5ef2a24185 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8dc13300c69866401d011d3f937b7f9 = $(`<div id="html_e8dc13300c69866401d011d3f937b7f9" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Boulevard THELOT_Ouvrage de signalisation</i></div>`)[0];
+            popup_be049e96476a92be8d4aad5ef2a24185.setContent(html_e8dc13300c69866401d011d3f937b7f9);
+        
+
+        marker_efc68b451f3fe2837e4f6cead81b639c.bindPopup(popup_be049e96476a92be8d4aad5ef2a24185)
+        ;
+
+        
+    
+    
+            marker_efc68b451f3fe2837e4f6cead81b639c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ca7d5cabf4fe61e2842d1f6fb3224b6 = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_9b2bc4b176877f2dbffbe7a8647046f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ca7d5cabf4fe61e2842d1f6fb3224b6.setIcon(icon_9b2bc4b176877f2dbffbe7a8647046f0);
+        
+    
+        var popup_0012cc0576c101e164987c6b81ebcb5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a155a800915089c78e022bcad4dcf76 = $(`<div id="html_1a155a800915089c78e022bcad4dcf76" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6  R MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_0012cc0576c101e164987c6b81ebcb5e.setContent(html_1a155a800915089c78e022bcad4dcf76);
+        
+
+        marker_7ca7d5cabf4fe61e2842d1f6fb3224b6.bindPopup(popup_0012cc0576c101e164987c6b81ebcb5e)
+        ;
+
+        
+    
+    
+            marker_7ca7d5cabf4fe61e2842d1f6fb3224b6.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf12f105ebf14a6cf8269b5337ea5bee = L.marker(
+                [-21.358216, 55.524269],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_a8458015c1069f11a178bce2fd07ee53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf12f105ebf14a6cf8269b5337ea5bee.setIcon(icon_a8458015c1069f11a178bce2fd07ee53);
+        
+    
+        var popup_c6a7a1d60313a2891db5cb6cc2ed0bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9be322d8dbbab6e2c95784675a162394 = $(`<div id="html_9be322d8dbbab6e2c95784675a162394" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_14 R EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_c6a7a1d60313a2891db5cb6cc2ed0bb6.setContent(html_9be322d8dbbab6e2c95784675a162394);
+        
+
+        marker_cf12f105ebf14a6cf8269b5337ea5bee.bindPopup(popup_c6a7a1d60313a2891db5cb6cc2ed0bb6)
+        ;
+
+        
+    
+    
+            marker_cf12f105ebf14a6cf8269b5337ea5bee.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9d4195c00bf9c46607668789a30aae4 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_52984776e1b0a2be6e88f22b97ea824e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9d4195c00bf9c46607668789a30aae4.setIcon(icon_52984776e1b0a2be6e88f22b97ea824e);
+        
+    
+        var popup_d25213ce73718fd9839cc0ab233a1511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dac4c6733e1db79119d956d8adb96ba = $(`<div id="html_0dac4c6733e1db79119d956d8adb96ba" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  AERODROME DE SAINT PIERRE POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_d25213ce73718fd9839cc0ab233a1511.setContent(html_0dac4c6733e1db79119d956d8adb96ba);
+        
+
+        marker_c9d4195c00bf9c46607668789a30aae4.bindPopup(popup_d25213ce73718fd9839cc0ab233a1511)
+        ;
+
+        
+    
+    
+            marker_c9d4195c00bf9c46607668789a30aae4.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be174979c5ae81888c3c43292a45e4ca = L.marker(
+                [49.343822, -0.746442],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_6d28d9d22bc442cb3d962951564a3271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be174979c5ae81888c3c43292a45e4ca.setIcon(icon_6d28d9d22bc442cb3d962951564a3271);
+        
+    
+        var popup_5b10d7e1df717800734e344fcfb36e05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5034bbc2a4583b5dbd1f355cc462260 = $(`<div id="html_f5034bbc2a4583b5dbd1f355cc462260" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_Boulevard DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_5b10d7e1df717800734e344fcfb36e05.setContent(html_f5034bbc2a4583b5dbd1f355cc462260);
+        
+
+        marker_be174979c5ae81888c3c43292a45e4ca.bindPopup(popup_5b10d7e1df717800734e344fcfb36e05)
+        ;
+
+        
+    
+    
+            marker_be174979c5ae81888c3c43292a45e4ca.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75ea4549def9badc32ba3a87b92eb590 = L.marker(
+                [-21.358216, 55.524269],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_815986014fa2fb72daf7be425c768702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75ea4549def9badc32ba3a87b92eb590.setIcon(icon_815986014fa2fb72daf7be425c768702);
+        
+    
+        var popup_015e61c21538b5aa1805db1408079a6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcb708cdd1bc814ed67bb3749fcf8a33 = $(`<div id="html_dcb708cdd1bc814ed67bb3749fcf8a33" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_14  R EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_015e61c21538b5aa1805db1408079a6e.setContent(html_dcb708cdd1bc814ed67bb3749fcf8a33);
+        
+
+        marker_75ea4549def9badc32ba3a87b92eb590.bindPopup(popup_015e61c21538b5aa1805db1408079a6e)
+        ;
+
+        
+    
+    
+            marker_75ea4549def9badc32ba3a87b92eb590.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fc667b39d0243f4aeb5d0e1bc47999f = L.marker(
+                [14.535562, -61.069856],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_b3a6b719d66704dbbd9ffda117da3e9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9fc667b39d0243f4aeb5d0e1bc47999f.setIcon(icon_b3a6b719d66704dbbd9ffda117da3e9e);
+        
+    
+        var popup_5955c33d4fbd0715d4eee7659c81069d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fedf5e0f52f35e64077e290813ab166e = $(`<div id="html_fedf5e0f52f35e64077e290813ab166e" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_5955c33d4fbd0715d4eee7659c81069d.setContent(html_fedf5e0f52f35e64077e290813ab166e);
+        
+
+        marker_9fc667b39d0243f4aeb5d0e1bc47999f.bindPopup(popup_5955c33d4fbd0715d4eee7659c81069d)
+        ;
+
+        
+    
+    
+            marker_9fc667b39d0243f4aeb5d0e1bc47999f.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0afabf9540281f7d84b6343b93f6799a = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_450680eb1b06e28beaa380a12e3d39f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0afabf9540281f7d84b6343b93f6799a.setIcon(icon_450680eb1b06e28beaa380a12e3d39f0);
+        
+    
+        var popup_ad4c418c2ce369fcab32f8fbebcfe8b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c217e7d1d32277a0f5241bdc6c123b5 = $(`<div id="html_3c217e7d1d32277a0f5241bdc6c123b5" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 . AERODROME DE SAINT-PIERRE-POINTE-BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_ad4c418c2ce369fcab32f8fbebcfe8b9.setContent(html_3c217e7d1d32277a0f5241bdc6c123b5);
+        
+
+        marker_0afabf9540281f7d84b6343b93f6799a.bindPopup(popup_ad4c418c2ce369fcab32f8fbebcfe8b9)
+        ;
+
+        
+    
+    
+            marker_0afabf9540281f7d84b6343b93f6799a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9d00038950c5528d777bde2a82f88ba = L.marker(
+                [-21.338246, 55.48582],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_262259891e2122749d47efcd4b127c7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9d00038950c5528d777bde2a82f88ba.setIcon(icon_262259891e2122749d47efcd4b127c7f);
+        
+    
+        var popup_74a4a048d4a344c9aa2b8b2111dcd3a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faf12985865395a8ec4f46de4b9373ba = $(`<div id="html_faf12985865395a8ec4f46de4b9373ba" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Route DE GALANTRY_Garage</i></div>`)[0];
+            popup_74a4a048d4a344c9aa2b8b2111dcd3a1.setContent(html_faf12985865395a8ec4f46de4b9373ba);
+        
+
+        marker_b9d00038950c5528d777bde2a82f88ba.bindPopup(popup_74a4a048d4a344c9aa2b8b2111dcd3a1)
+        ;
+
+        
+    
+    
+            marker_b9d00038950c5528d777bde2a82f88ba.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de64c8b0afb27e9a1225de4fe0ca90ca = L.marker(
+                [47.429356, 3.499706],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_4a19e03f6233197670f505993934b04c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de64c8b0afb27e9a1225de4fe0ca90ca.setIcon(icon_4a19e03f6233197670f505993934b04c);
+        
+    
+        var popup_76dfa99a3ab4c07fd4dc7c6fa162e6fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c729a2d17a0edab260461b739f95588 = $(`<div id="html_8c729a2d17a0edab260461b739f95588" style="width: 100.0%; height: 100.0%;"><i>biens du ministère de l'Intérieur</i></div>`)[0];
+            popup_76dfa99a3ab4c07fd4dc7c6fa162e6fb.setContent(html_8c729a2d17a0edab260461b739f95588);
+        
+
+        marker_de64c8b0afb27e9a1225de4fe0ca90ca.bindPopup(popup_76dfa99a3ab4c07fd4dc7c6fa162e6fb)
+        ;
+
+        
+    
+    
+            marker_de64c8b0afb27e9a1225de4fe0ca90ca.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc913cef5ef4706b4e3716313c4d77e9 = L.marker(
+                [-21.262131, 55.501798],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ed321eb5cb6f88b673e336b6772fc30c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc913cef5ef4706b4e3716313c4d77e9.setIcon(icon_ed321eb5cb6f88b673e336b6772fc30c);
+        
+    
+        var popup_4fbf7695f8bc8281eaa2d392d547ef37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfb014c4b9631d764649fdbd38a55468 = $(`<div id="html_cfb014c4b9631d764649fdbd38a55468" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8 Rue MARCEL BONIN_Terrain en friche</i></div>`)[0];
+            popup_4fbf7695f8bc8281eaa2d392d547ef37.setContent(html_cfb014c4b9631d764649fdbd38a55468);
+        
+
+        marker_fc913cef5ef4706b4e3716313c4d77e9.bindPopup(popup_4fbf7695f8bc8281eaa2d392d547ef37)
+        ;
+
+        
+    
+    
+            marker_fc913cef5ef4706b4e3716313c4d77e9.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c90480cfb34cfd02a8dad28531fe3d0 = L.marker(
+                [-21.339253, 55.486255],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_df33edfe4ab7c3a5b4d7a95a96f64423 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c90480cfb34cfd02a8dad28531fe3d0.setIcon(icon_df33edfe4ab7c3a5b4d7a95a96f64423);
+        
+    
+        var popup_e94c6a5b85b07e0c899609352a7a4984 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8366fc6a6e0c9d83a1cb7a0876d5264 = $(`<div id="html_b8366fc6a6e0c9d83a1cb7a0876d5264" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  QU DE L'EPI_Ouvrage de signalisation</i></div>`)[0];
+            popup_e94c6a5b85b07e0c899609352a7a4984.setContent(html_b8366fc6a6e0c9d83a1cb7a0876d5264);
+        
+
+        marker_3c90480cfb34cfd02a8dad28531fe3d0.bindPopup(popup_e94c6a5b85b07e0c899609352a7a4984)
+        ;
+
+        
+    
+    
+            marker_3c90480cfb34cfd02a8dad28531fe3d0.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffd9f45ef940bda324d2f145489e7e69 = L.marker(
+                [49.018048, -0.029116],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_24359dd594c2cac2c5377d0639dfc253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffd9f45ef940bda324d2f145489e7e69.setIcon(icon_24359dd594c2cac2c5377d0639dfc253);
+        
+    
+        var popup_c984a58c0ecf0d9bc314f8f064f26db4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ba596183f1da317a7062cccc9d3bbc = $(`<div id="html_05ba596183f1da317a7062cccc9d3bbc" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_1 RUE DU 11 NOVEMBRE_Immeuble de bureaux</i></div>`)[0];
+            popup_c984a58c0ecf0d9bc314f8f064f26db4.setContent(html_05ba596183f1da317a7062cccc9d3bbc);
+        
+
+        marker_ffd9f45ef940bda324d2f145489e7e69.bindPopup(popup_c984a58c0ecf0d9bc314f8f064f26db4)
+        ;
+
+        
+    
+    
+            marker_ffd9f45ef940bda324d2f145489e7e69.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88434615bbe9b708f1191c1037919292 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_6a70e07421917a31362ab1399494ee27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88434615bbe9b708f1191c1037919292.setIcon(icon_6a70e07421917a31362ab1399494ee27);
+        
+    
+        var popup_ec3a7423a271d023df95422df9a14c2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90f20db2ad75126a8cff2617dd95d735 = $(`<div id="html_90f20db2ad75126a8cff2617dd95d735" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  AERODROME DE SAINT PIERRE POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_ec3a7423a271d023df95422df9a14c2d.setContent(html_90f20db2ad75126a8cff2617dd95d735);
+        
+
+        marker_88434615bbe9b708f1191c1037919292.bindPopup(popup_ec3a7423a271d023df95422df9a14c2d)
+        ;
+
+        
+    
+    
+            marker_88434615bbe9b708f1191c1037919292.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1d2c5909c42465cfc87af4373c88d82 = L.marker(
+                [49.286036, -0.716257],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_82729b1167191c84ef42b7a9f25cfd23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1d2c5909c42465cfc87af4373c88d82.setIcon(icon_82729b1167191c84ef42b7a9f25cfd23);
+        
+    
+        var popup_13c8f77835e7b5f8b22fe885ccb01f6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0275730f3d5f124aa99038066d1b128 = $(`<div id="html_a0275730f3d5f124aa99038066d1b128" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  BD DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_13c8f77835e7b5f8b22fe885ccb01f6a.setContent(html_a0275730f3d5f124aa99038066d1b128);
+        
+
+        marker_b1d2c5909c42465cfc87af4373c88d82.bindPopup(popup_13c8f77835e7b5f8b22fe885ccb01f6a)
+        ;
+
+        
+    
+    
+            marker_b1d2c5909c42465cfc87af4373c88d82.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ea0558628e066a7c599476c649381ed = L.marker(
+                [-21.26949, 55.529061],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_7dc011350132cafe5dc3b7a28769294e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ea0558628e066a7c599476c649381ed.setIcon(icon_7dc011350132cafe5dc3b7a28769294e);
+        
+    
+        var popup_3a30692043b4c2dca94fc7a4e8e10f8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_beed76136a620042ca3e3e27d562a102 = $(`<div id="html_beed76136a620042ca3e3e27d562a102" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Quai DE L ALYSSE_Immeuble de bureaux</i></div>`)[0];
+            popup_3a30692043b4c2dca94fc7a4e8e10f8e.setContent(html_beed76136a620042ca3e3e27d562a102);
+        
+
+        marker_4ea0558628e066a7c599476c649381ed.bindPopup(popup_3a30692043b4c2dca94fc7a4e8e10f8e)
+        ;
+
+        
+    
+    
+            marker_4ea0558628e066a7c599476c649381ed.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_833c1859aee7a3d0aa427a642eeaafeb = L.marker(
+                [-21.321155, 55.479376],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_b7f406554ec996b127ed92f8b5c63bde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_833c1859aee7a3d0aa427a642eeaafeb.setIcon(icon_b7f406554ec996b127ed92f8b5c63bde);
+        
+    
+        var popup_7d7b46c55150506f24b2e56d4b27a6fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_822b735acb6080667cef4a48cddab4d2 = $(`<div id="html_822b735acb6080667cef4a48cddab4d2" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Quai MIMOSA_Immeuble de bureaux</i></div>`)[0];
+            popup_7d7b46c55150506f24b2e56d4b27a6fc.setContent(html_822b735acb6080667cef4a48cddab4d2);
+        
+
+        marker_833c1859aee7a3d0aa427a642eeaafeb.bindPopup(popup_7d7b46c55150506f24b2e56d4b27a6fc)
+        ;
+
+        
+    
+    
+            marker_833c1859aee7a3d0aa427a642eeaafeb.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f782020910d9285f8886006aa1d2d341 = L.marker(
+                [50.753831, 2.262365],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_2b6f9cebdf8f98b953e6d61d1c89879f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f782020910d9285f8886006aa1d2d341.setIcon(icon_2b6f9cebdf8f98b953e6d61d1c89879f);
+        
+    
+        var popup_0f131abee0a1466e7883ce3e369a917a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90230963ce3f5c909f4b6552d81776be = $(`<div id="html_90230963ce3f5c909f4b6552d81776be" style="width: 100.0%; height: 100.0%;"><i>Saint Pierre et Miquelon_quai du commerce_Bâtiment technique</i></div>`)[0];
+            popup_0f131abee0a1466e7883ce3e369a917a.setContent(html_90230963ce3f5c909f4b6552d81776be);
+        
+
+        marker_f782020910d9285f8886006aa1d2d341.bindPopup(popup_0f131abee0a1466e7883ce3e369a917a)
+        ;
+
+        
+    
+    
+            marker_f782020910d9285f8886006aa1d2d341.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e10fa2b5d24db61fc693ac86de27a03c = L.marker(
+                [48.652721, -1.995278],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_bc7989981a30d8aef16bdd18563458fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e10fa2b5d24db61fc693ac86de27a03c.setIcon(icon_bc7989981a30d8aef16bdd18563458fc);
+        
+    
+        var popup_4f78002ef074522cd875383586c35c0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d28131d6e10fd04a49e2c79267239192 = $(`<div id="html_d28131d6e10fd04a49e2c79267239192" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_14 Rue EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_4f78002ef074522cd875383586c35c0c.setContent(html_d28131d6e10fd04a49e2c79267239192);
+        
+
+        marker_e10fa2b5d24db61fc693ac86de27a03c.bindPopup(popup_4f78002ef074522cd875383586c35c0c)
+        ;
+
+        
+    
+    
+            marker_e10fa2b5d24db61fc693ac86de27a03c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e097e76a23cedfd4e573ef09169d8ec = L.marker(
+                [-21.358216, 55.524269],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ecee1cf1f6136615f5b3f61822f86d32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e097e76a23cedfd4e573ef09169d8ec.setIcon(icon_ecee1cf1f6136615f5b3f61822f86d32);
+        
+    
+        var popup_69e2540c5674ca0a83a2344968cefde9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_728b74546290d90a686b916932665084 = $(`<div id="html_728b74546290d90a686b916932665084" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_14 Rue EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_69e2540c5674ca0a83a2344968cefde9.setContent(html_728b74546290d90a686b916932665084);
+        
+
+        marker_2e097e76a23cedfd4e573ef09169d8ec.bindPopup(popup_69e2540c5674ca0a83a2344968cefde9)
+        ;
+
+        
+    
+    
+            marker_2e097e76a23cedfd4e573ef09169d8ec.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d5736ec6ba31f65d7706f5fbeae49c3 = L.marker(
+                [49.018048, -0.029116],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_4711ed0455f4b8bcf493861dd74032d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d5736ec6ba31f65d7706f5fbeae49c3.setIcon(icon_4711ed0455f4b8bcf493861dd74032d5);
+        
+    
+        var popup_cdd3c08605904ef41dcd94563ce31918 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3000c3dbcba3cd584a54fe45572ae10 = $(`<div id="html_f3000c3dbcba3cd584a54fe45572ae10" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_1  RUE DU 11 NOVEMBRE_Immeuble de bureaux</i></div>`)[0];
+            popup_cdd3c08605904ef41dcd94563ce31918.setContent(html_f3000c3dbcba3cd584a54fe45572ae10);
+        
+
+        marker_5d5736ec6ba31f65d7706f5fbeae49c3.bindPopup(popup_cdd3c08605904ef41dcd94563ce31918)
+        ;
+
+        
+    
+    
+            marker_5d5736ec6ba31f65d7706f5fbeae49c3.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11d025892c264094f30adc2451ec6f0a = L.marker(
+                [46.226501, -0.145433],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_2f0089e7593ced57d0586766381d84d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11d025892c264094f30adc2451ec6f0a.setIcon(icon_2f0089e7593ced57d0586766381d84d2);
+        
+    
+        var popup_85d92dcaedcbb92c41bdf43e0c997555 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d7433218a05a72a8e599fff22f4a47c = $(`<div id="html_6d7433218a05a72a8e599fff22f4a47c" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Gendarmerie</i></div>`)[0];
+            popup_85d92dcaedcbb92c41bdf43e0c997555.setContent(html_6d7433218a05a72a8e599fff22f4a47c);
+        
+
+        marker_11d025892c264094f30adc2451ec6f0a.bindPopup(popup_85d92dcaedcbb92c41bdf43e0c997555)
+        ;
+
+        
+    
+    
+            marker_11d025892c264094f30adc2451ec6f0a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd8d98fb351ea0df4953cc40bc8da44f = L.marker(
+                [-21.358216, 55.524269],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_de286efa9b3b857fed9835060121b80d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd8d98fb351ea0df4953cc40bc8da44f.setIcon(icon_de286efa9b3b857fed9835060121b80d);
+        
+    
+        var popup_70d63b2b0823fa5bb41de21579ee8eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724306c7de7875a16c9b90ea70aec7fb = $(`<div id="html_724306c7de7875a16c9b90ea70aec7fb" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_14  R EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_70d63b2b0823fa5bb41de21579ee8eb9.setContent(html_724306c7de7875a16c9b90ea70aec7fb);
+        
+
+        marker_bd8d98fb351ea0df4953cc40bc8da44f.bindPopup(popup_70d63b2b0823fa5bb41de21579ee8eb9)
+        ;
+
+        
+    
+    
+            marker_bd8d98fb351ea0df4953cc40bc8da44f.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4565f7c206c5267f79d1048c64aebd3c = L.marker(
+                [-21.342248, 55.468503],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_c34a8e551802c939c9a9e1f50ab7c5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4565f7c206c5267f79d1048c64aebd3c.setIcon(icon_c34a8e551802c939c9a9e1f50ab7c5ca);
+        
+    
+        var popup_81e2e156ae7a752cae20fffe9341ba83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a5345cc05d975f00cc19808acd6c8c1 = $(`<div id="html_5a5345cc05d975f00cc19808acd6c8c1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_1 Rue GLOANEC_Immeuble de bureaux</i></div>`)[0];
+            popup_81e2e156ae7a752cae20fffe9341ba83.setContent(html_5a5345cc05d975f00cc19808acd6c8c1);
+        
+
+        marker_4565f7c206c5267f79d1048c64aebd3c.bindPopup(popup_81e2e156ae7a752cae20fffe9341ba83)
+        ;
+
+        
+    
+    
+            marker_4565f7c206c5267f79d1048c64aebd3c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e8b6169b2b59827a707c2ecd81a4bec = L.marker(
+                [-21.26949, 55.529061],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_785ecdb3c0916a750228d3ffd52cba14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e8b6169b2b59827a707c2ecd81a4bec.setIcon(icon_785ecdb3c0916a750228d3ffd52cba14);
+        
+    
+        var popup_8d28972fb8f195a83cc2d17f07014124 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e14ed782ec2d37332cfe1450fa53411 = $(`<div id="html_7e14ed782ec2d37332cfe1450fa53411" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  QU DE L'ALYSSE_Immeuble de bureaux</i></div>`)[0];
+            popup_8d28972fb8f195a83cc2d17f07014124.setContent(html_7e14ed782ec2d37332cfe1450fa53411);
+        
+
+        marker_2e8b6169b2b59827a707c2ecd81a4bec.bindPopup(popup_8d28972fb8f195a83cc2d17f07014124)
+        ;
+
+        
+    
+    
+            marker_2e8b6169b2b59827a707c2ecd81a4bec.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_226d565c79793107ee0a2329baab1311 = L.marker(
+                [46.226501, -0.145433],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_1a69d0335518dc6bd238b74c7a85a1d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_226d565c79793107ee0a2329baab1311.setIcon(icon_1a69d0335518dc6bd238b74c7a85a1d3);
+        
+    
+        var popup_37ae4b3dbff8c24a400a92d4d9ca9e24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_563f7e733c49269e3f41f43dd9bfbb74 = $(`<div id="html_563f7e733c49269e3f41f43dd9bfbb74" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Gendarmerie</i></div>`)[0];
+            popup_37ae4b3dbff8c24a400a92d4d9ca9e24.setContent(html_563f7e733c49269e3f41f43dd9bfbb74);
+        
+
+        marker_226d565c79793107ee0a2329baab1311.bindPopup(popup_37ae4b3dbff8c24a400a92d4d9ca9e24)
+        ;
+
+        
+    
+    
+            marker_226d565c79793107ee0a2329baab1311.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60bedafba528c5d4bc44bd00733c5100 = L.marker(
+                [49.358762, -0.877732],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_b3b062f6d8c181c059604fc9dd3679c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60bedafba528c5d4bc44bd00733c5100.setIcon(icon_b3b062f6d8c181c059604fc9dd3679c9);
+        
+    
+        var popup_41448d13821eb39da2cb429af94ec2e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5a03daf4d1f3fc442afc89e43e388a7 = $(`<div id="html_b5a03daf4d1f3fc442afc89e43e388a7" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  BD DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_41448d13821eb39da2cb429af94ec2e9.setContent(html_b5a03daf4d1f3fc442afc89e43e388a7);
+        
+
+        marker_60bedafba528c5d4bc44bd00733c5100.bindPopup(popup_41448d13821eb39da2cb429af94ec2e9)
+        ;
+
+        
+    
+    
+            marker_60bedafba528c5d4bc44bd00733c5100.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f92240cf3e73be2cfea96e3359f8214 = L.marker(
+                [47.099522, 2.48842],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_d2749ccd2db1f0bda585dff05db5751a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f92240cf3e73be2cfea96e3359f8214.setIcon(icon_d2749ccd2db1f0bda585dff05db5751a);
+        
+    
+        var popup_f5137f820ad7fe277daa886b6b976ea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c2a78d222d65fce9ae1026c598748c8 = $(`<div id="html_6c2a78d222d65fce9ae1026c598748c8" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8 PL DU GENERAL DE GAULLE_Trésorerie</i></div>`)[0];
+            popup_f5137f820ad7fe277daa886b6b976ea5.setContent(html_6c2a78d222d65fce9ae1026c598748c8);
+        
+
+        marker_4f92240cf3e73be2cfea96e3359f8214.bindPopup(popup_f5137f820ad7fe277daa886b6b976ea5)
+        ;
+
+        
+    
+    
+            marker_4f92240cf3e73be2cfea96e3359f8214.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b41987ba58fe6e880b335bb5a0e264b1 = L.marker(
+                [14.738945, -61.175575],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ce66fdf91db038f0d4df828b547444b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b41987ba58fe6e880b335bb5a0e264b1.setIcon(icon_ce66fdf91db038f0d4df828b547444b0);
+        
+    
+        var popup_0f9b01e5e404dd017eaa2e3129021db7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_649774ca887fabfc851c56d938021b9f = $(`<div id="html_649774ca887fabfc851c56d938021b9f" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_24B RUE MARGUERITE_Terrain en friche</i></div>`)[0];
+            popup_0f9b01e5e404dd017eaa2e3129021db7.setContent(html_649774ca887fabfc851c56d938021b9f);
+        
+
+        marker_b41987ba58fe6e880b335bb5a0e264b1.bindPopup(popup_0f9b01e5e404dd017eaa2e3129021db7)
+        ;
+
+        
+    
+    
+            marker_b41987ba58fe6e880b335bb5a0e264b1.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac5e05bdeb5dddb8ce2fc78ca85dc9db = L.marker(
+                [-21.358216, 55.524269],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ed0294ca5064341ef1d6c4e49d37d629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac5e05bdeb5dddb8ce2fc78ca85dc9db.setIcon(icon_ed0294ca5064341ef1d6c4e49d37d629);
+        
+    
+        var popup_8748e2f19751d97a3f636459e9e122e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebf52faaf8486edb4321fb256cd942a0 = $(`<div id="html_ebf52faaf8486edb4321fb256cd942a0" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_14  R EMILE SASCO_Tribunal</i></div>`)[0];
+            popup_8748e2f19751d97a3f636459e9e122e3.setContent(html_ebf52faaf8486edb4321fb256cd942a0);
+        
+
+        marker_ac5e05bdeb5dddb8ce2fc78ca85dc9db.bindPopup(popup_8748e2f19751d97a3f636459e9e122e3)
+        ;
+
+        
+    
+    
+            marker_ac5e05bdeb5dddb8ce2fc78ca85dc9db.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f32321f14795795ec8fb4689e760d9c = L.marker(
+                [46.492593, -1.773204],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_f43831cfd49f840dde93c9479be24305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f32321f14795795ec8fb4689e760d9c.setIcon(icon_f43831cfd49f840dde93c9479be24305);
+        
+    
+        var popup_26369eeb020e61f4693022a73665fd39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6650ff51a1b697d5bc2b549749199af1 = $(`<div id="html_6650ff51a1b697d5bc2b549749199af1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Champ d'exercice</i></div>`)[0];
+            popup_26369eeb020e61f4693022a73665fd39.setContent(html_6650ff51a1b697d5bc2b549749199af1);
+        
+
+        marker_6f32321f14795795ec8fb4689e760d9c.bindPopup(popup_26369eeb020e61f4693022a73665fd39)
+        ;
+
+        
+    
+    
+            marker_6f32321f14795795ec8fb4689e760d9c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90382041134e9d6659ca67153d0cf49a = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_39a2969b6214757133b374976246ab0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90382041134e9d6659ca67153d0cf49a.setIcon(icon_39a2969b6214757133b374976246ab0f);
+        
+    
+        var popup_1376c17160752701bc94258adf9b0b7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46da3c144fd68118569c0089411c96a1 = $(`<div id="html_46da3c144fd68118569c0089411c96a1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 . AERODROME DE SAINT-PIERRE-POINTE-BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_1376c17160752701bc94258adf9b0b7f.setContent(html_46da3c144fd68118569c0089411c96a1);
+        
+
+        marker_90382041134e9d6659ca67153d0cf49a.bindPopup(popup_1376c17160752701bc94258adf9b0b7f)
+        ;
+
+        
+    
+    
+            marker_90382041134e9d6659ca67153d0cf49a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e79201b1ea633516a79d04455edaae0 = L.marker(
+                [47.099522, 2.48842],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ac62f4029b52de6d99bc35326c05778d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e79201b1ea633516a79d04455edaae0.setIcon(icon_ac62f4029b52de6d99bc35326c05778d);
+        
+    
+        var popup_f9dee2f78ad18612aea488285da18a1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_103132e589942b333adfc45e39311849 = $(`<div id="html_103132e589942b333adfc45e39311849" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8  PL DU GENERAL DE GAULLE_Trésorerie</i></div>`)[0];
+            popup_f9dee2f78ad18612aea488285da18a1c.setContent(html_103132e589942b333adfc45e39311849);
+        
+
+        marker_3e79201b1ea633516a79d04455edaae0.bindPopup(popup_f9dee2f78ad18612aea488285da18a1c)
+        ;
+
+        
+    
+    
+            marker_3e79201b1ea633516a79d04455edaae0.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7680461c8015f176f4b3762c81224c2 = L.marker(
+                [49.027787, 1.149163],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_8a18ad7b9b4c730ad7a4f4044e25c62f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7680461c8015f176f4b3762c81224c2.setIcon(icon_8a18ad7b9b4c730ad7a4f4044e25c62f);
+        
+    
+        var popup_bf8e9537a5fd8b012b875890ee685971 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37e4bf93275f2391f6718184d7140f93 = $(`<div id="html_37e4bf93275f2391f6718184d7140f93" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_27_Installation portuaire</i></div>`)[0];
+            popup_bf8e9537a5fd8b012b875890ee685971.setContent(html_37e4bf93275f2391f6718184d7140f93);
+        
+
+        marker_d7680461c8015f176f4b3762c81224c2.bindPopup(popup_bf8e9537a5fd8b012b875890ee685971)
+        ;
+
+        
+    
+    
+            marker_d7680461c8015f176f4b3762c81224c2.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac8bd7dc9adea8261ceba8a3f8b17d4c = L.marker(
+                [49.343822, -0.746442],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_20728f6a8a7de372b6d67624039452dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac8bd7dc9adea8261ceba8a3f8b17d4c.setIcon(icon_20728f6a8a7de372b6d67624039452dc);
+        
+    
+        var popup_af274de97acc549bec9593bf72e916f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80395fcb0883eaebf478a055491221cb = $(`<div id="html_80395fcb0883eaebf478a055491221cb" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_BD PORT EN BESSIN_Immeuble de bureaux</i></div>`)[0];
+            popup_af274de97acc549bec9593bf72e916f2.setContent(html_80395fcb0883eaebf478a055491221cb);
+        
+
+        marker_ac8bd7dc9adea8261ceba8a3f8b17d4c.bindPopup(popup_af274de97acc549bec9593bf72e916f2)
+        ;
+
+        
+    
+    
+            marker_ac8bd7dc9adea8261ceba8a3f8b17d4c.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55721c7a0915ea5356d304d9ffdd70e7 = L.marker(
+                [47.099522, 2.48842],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_520d72fba37d4a0cd95948f650420836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55721c7a0915ea5356d304d9ffdd70e7.setIcon(icon_520d72fba37d4a0cd95948f650420836);
+        
+    
+        var popup_699a34343fb3f92b4c5ad25a9f97c810 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48449e06e675fa3b3c11599199add2b3 = $(`<div id="html_48449e06e675fa3b3c11599199add2b3" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8  PL DU GENERAL DE GAULLE_Trésorerie</i></div>`)[0];
+            popup_699a34343fb3f92b4c5ad25a9f97c810.setContent(html_48449e06e675fa3b3c11599199add2b3);
+        
+
+        marker_55721c7a0915ea5356d304d9ffdd70e7.bindPopup(popup_699a34343fb3f92b4c5ad25a9f97c810)
+        ;
+
+        
+    
+    
+            marker_55721c7a0915ea5356d304d9ffdd70e7.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67d1852e2e804d4f464aaa8d497cfd40 = L.marker(
+                [-21.338246, 55.48582],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_7665335982f02bf66028b4d98be18ed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67d1852e2e804d4f464aaa8d497cfd40.setIcon(icon_7665335982f02bf66028b4d98be18ed7);
+        
+    
+        var popup_9225b9c177944904490188d86d46d15f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67b1636d76978912a63eee548298ca3a = $(`<div id="html_67b1636d76978912a63eee548298ca3a" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Route DE GALANTRY_Ouvrage de signalisation</i></div>`)[0];
+            popup_9225b9c177944904490188d86d46d15f.setContent(html_67b1636d76978912a63eee548298ca3a);
+        
+
+        marker_67d1852e2e804d4f464aaa8d497cfd40.bindPopup(popup_9225b9c177944904490188d86d46d15f)
+        ;
+
+        
+    
+    
+            marker_67d1852e2e804d4f464aaa8d497cfd40.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6aadf3e2d848824c03c2c006eae631fb = L.marker(
+                [49.965976, 1.220595],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_8352f0df39feee17e6242371ebcd1ec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6aadf3e2d848824c03c2c006eae631fb.setIcon(icon_8352f0df39feee17e6242371ebcd1ec9);
+        
+    
+        var popup_f48d38609621f0f945f9d63d8e64d699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f0b53f2136eecec8168484e15b924e3 = $(`<div id="html_8f0b53f2136eecec8168484e15b924e3" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8  R DES PETITS PECHEURS_Immeuble de bureaux</i></div>`)[0];
+            popup_f48d38609621f0f945f9d63d8e64d699.setContent(html_8f0b53f2136eecec8168484e15b924e3);
+        
+
+        marker_6aadf3e2d848824c03c2c006eae631fb.bindPopup(popup_f48d38609621f0f945f9d63d8e64d699)
+        ;
+
+        
+    
+    
+            marker_6aadf3e2d848824c03c2c006eae631fb.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a61ca6ea6479dd346df4fcae1c959a6 = L.marker(
+                [50.753831, 2.262365],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_d7b5a47170651c1b79ec535d812698a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a61ca6ea6479dd346df4fcae1c959a6.setIcon(icon_d7b5a47170651c1b79ec535d812698a6);
+        
+    
+        var popup_9eab85fd91d3542b9c36554ebc653eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a3edd3dc674a17000d270821bc7fb75 = $(`<div id="html_2a3edd3dc674a17000d270821bc7fb75" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_quai du commerce_Bâtiment technique</i></div>`)[0];
+            popup_9eab85fd91d3542b9c36554ebc653eff.setContent(html_2a3edd3dc674a17000d270821bc7fb75);
+        
+
+        marker_7a61ca6ea6479dd346df4fcae1c959a6.bindPopup(popup_9eab85fd91d3542b9c36554ebc653eff)
+        ;
+
+        
+    
+    
+            marker_7a61ca6ea6479dd346df4fcae1c959a6.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d58e6e19981236bd01c8880bf1f52235 = L.marker(
+                [-21.321155, 55.479376],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_dc32b14b90d27d91c10d7788e037e813 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d58e6e19981236bd01c8880bf1f52235.setIcon(icon_dc32b14b90d27d91c10d7788e037e813);
+        
+    
+        var popup_99969a38aa8cec142adacfb608ce0f85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63fe6f292d6e6b7f206d611881226571 = $(`<div id="html_63fe6f292d6e6b7f206d611881226571" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  QU MIMOSA_Immeuble de bureaux</i></div>`)[0];
+            popup_99969a38aa8cec142adacfb608ce0f85.setContent(html_63fe6f292d6e6b7f206d611881226571);
+        
+
+        marker_d58e6e19981236bd01c8880bf1f52235.bindPopup(popup_99969a38aa8cec142adacfb608ce0f85)
+        ;
+
+        
+    
+    
+            marker_d58e6e19981236bd01c8880bf1f52235.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3164e09de964538addf95ac557489fbc = L.marker(
+                [50.753831, 2.262365],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_5b0a43ca4ce2a4addf4ca36f9b956e0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3164e09de964538addf95ac557489fbc.setIcon(icon_5b0a43ca4ce2a4addf4ca36f9b956e0d);
+        
+    
+        var popup_77aa558fddc487c1be061dfa3aa15fbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_259e04839666410c7d946fd13d6d4ca2 = $(`<div id="html_259e04839666410c7d946fd13d6d4ca2" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_quai du commerce_Atelier réparation, entretien</i></div>`)[0];
+            popup_77aa558fddc487c1be061dfa3aa15fbe.setContent(html_259e04839666410c7d946fd13d6d4ca2);
+        
+
+        marker_3164e09de964538addf95ac557489fbc.bindPopup(popup_77aa558fddc487c1be061dfa3aa15fbe)
+        ;
+
+        
+    
+    
+            marker_3164e09de964538addf95ac557489fbc.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a48018e5a94124e64fc16afb6dfff2c3 = L.marker(
+                [43.640372, 5.143595],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_79a6b1ae535064b025ea781753dfd7fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a48018e5a94124e64fc16afb6dfff2c3.setIcon(icon_79a6b1ae535064b025ea781753dfd7fa);
+        
+    
+        var popup_2971469b4bc620f841e91b8acee420b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc4e6b9c03a5f836eec09489d8c1ca5e = $(`<div id="html_bc4e6b9c03a5f836eec09489d8c1ca5e" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_Terrain en friche</i></div>`)[0];
+            popup_2971469b4bc620f841e91b8acee420b0.setContent(html_bc4e6b9c03a5f836eec09489d8c1ca5e);
+        
+
+        marker_a48018e5a94124e64fc16afb6dfff2c3.bindPopup(popup_2971469b4bc620f841e91b8acee420b0)
+        ;
+
+        
+    
+    
+            marker_a48018e5a94124e64fc16afb6dfff2c3.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bd766bfa1838f7ffb2bae8f54f671ef = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_b0519bf1e40b11445bebc83b56aac6fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bd766bfa1838f7ffb2bae8f54f671ef.setIcon(icon_b0519bf1e40b11445bebc83b56aac6fd);
+        
+    
+        var popup_7dff5667dd6d20faba61c4a084d4b366 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8467cbbf6f2c3d964e76ead93e9d1c24 = $(`<div id="html_8467cbbf6f2c3d964e76ead93e9d1c24" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6 Rue MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_7dff5667dd6d20faba61c4a084d4b366.setContent(html_8467cbbf6f2c3d964e76ead93e9d1c24);
+        
+
+        marker_6bd766bfa1838f7ffb2bae8f54f671ef.bindPopup(popup_7dff5667dd6d20faba61c4a084d4b366)
+        ;
+
+        
+    
+    
+            marker_6bd766bfa1838f7ffb2bae8f54f671ef.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cefb679a882d7c02b19e6a4596fd648a = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_8bb267e5e6d76458961ad4e7c48a6cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cefb679a882d7c02b19e6a4596fd648a.setIcon(icon_8bb267e5e6d76458961ad4e7c48a6cc3);
+        
+    
+        var popup_62d1d96093a5cdc12da6dd3abe0760d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_418bb31aa9257c4ae8eb6c20ed58abf6 = $(`<div id="html_418bb31aa9257c4ae8eb6c20ed58abf6" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6  R MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_62d1d96093a5cdc12da6dd3abe0760d1.setContent(html_418bb31aa9257c4ae8eb6c20ed58abf6);
+        
+
+        marker_cefb679a882d7c02b19e6a4596fd648a.bindPopup(popup_62d1d96093a5cdc12da6dd3abe0760d1)
+        ;
+
+        
+    
+    
+            marker_cefb679a882d7c02b19e6a4596fd648a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2f8641a12881683ce3ae2093776c078 = L.marker(
+                [49.343822, -0.746442],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_9555cc161190a885ff663118f9fde849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2f8641a12881683ce3ae2093776c078.setIcon(icon_9555cc161190a885ff663118f9fde849);
+        
+    
+        var popup_7d6d02c8afde0c9403c2bfc5ec300387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bd72f5755047c40c23570397369b29b = $(`<div id="html_6bd72f5755047c40c23570397369b29b" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 BD DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_7d6d02c8afde0c9403c2bfc5ec300387.setContent(html_6bd72f5755047c40c23570397369b29b);
+        
+
+        marker_c2f8641a12881683ce3ae2093776c078.bindPopup(popup_7d6d02c8afde0c9403c2bfc5ec300387)
+        ;
+
+        
+    
+    
+            marker_c2f8641a12881683ce3ae2093776c078.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a365f8fdbc86564be53758e7912c8fe = L.marker(
+                [14.758949, -61.18694],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_647f09e34acf403bfdadfc97d19dc67e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a365f8fdbc86564be53758e7912c8fe.setIcon(icon_647f09e34acf403bfdadfc97d19dc67e);
+        
+    
+        var popup_f096464867cc3b2fa729bc097b4f871d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03f878d2f8f481367c604cb34f9db54c = $(`<div id="html_03f878d2f8f481367c604cb34f9db54c" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_Terrain en friche</i></div>`)[0];
+            popup_f096464867cc3b2fa729bc097b4f871d.setContent(html_03f878d2f8f481367c604cb34f9db54c);
+        
+
+        marker_7a365f8fdbc86564be53758e7912c8fe.bindPopup(popup_f096464867cc3b2fa729bc097b4f871d)
+        ;
+
+        
+    
+    
+            marker_7a365f8fdbc86564be53758e7912c8fe.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06aeb9eadf154cba02a5ba69489a5925 = L.marker(
+                [49.027787, 1.149163],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_dc0e99d71d72df6e3f8b7aef8ff0ec03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06aeb9eadf154cba02a5ba69489a5925.setIcon(icon_dc0e99d71d72df6e3f8b7aef8ff0ec03);
+        
+    
+        var popup_9ad0cd257fed4b7c191d1092924cf2ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84c52888d097291f8c552e0512fc8539 = $(`<div id="html_84c52888d097291f8c552e0512fc8539" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_27_Installation portuaire</i></div>`)[0];
+            popup_9ad0cd257fed4b7c191d1092924cf2ad.setContent(html_84c52888d097291f8c552e0512fc8539);
+        
+
+        marker_06aeb9eadf154cba02a5ba69489a5925.bindPopup(popup_9ad0cd257fed4b7c191d1092924cf2ad)
+        ;
+
+        
+    
+    
+            marker_06aeb9eadf154cba02a5ba69489a5925.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c97a75ddeae16afa1579e0350049eb2b = L.marker(
+                [49.358762, -0.877732],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_9dcd012fbf8b5f9cde9a7cf3078c177d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c97a75ddeae16afa1579e0350049eb2b.setIcon(icon_9dcd012fbf8b5f9cde9a7cf3078c177d);
+        
+    
+        var popup_2266ded742b0b49ca4715898742bab9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_408e3a4f16d5a545aa165b60bef7b767 = $(`<div id="html_408e3a4f16d5a545aa165b60bef7b767" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Boulevard DE PORT EN BESSIN_Bâtiment scientifique</i></div>`)[0];
+            popup_2266ded742b0b49ca4715898742bab9c.setContent(html_408e3a4f16d5a545aa165b60bef7b767);
+        
+
+        marker_c97a75ddeae16afa1579e0350049eb2b.bindPopup(popup_2266ded742b0b49ca4715898742bab9c)
+        ;
+
+        
+    
+    
+            marker_c97a75ddeae16afa1579e0350049eb2b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d0d037fd1e99d45cef7caba4456bd35 = L.marker(
+                [-21.262131, 55.501798],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_81e0becfb718ab2ba2cd4957b33af560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d0d037fd1e99d45cef7caba4456bd35.setIcon(icon_81e0becfb718ab2ba2cd4957b33af560);
+        
+    
+        var popup_a50454491b67d0831d3f61f3d97247f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6c2a6be23ace2f3e942d81185379b8c = $(`<div id="html_d6c2a6be23ace2f3e942d81185379b8c" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8  R MARCEL BONIN_Terrain en friche</i></div>`)[0];
+            popup_a50454491b67d0831d3f61f3d97247f0.setContent(html_d6c2a6be23ace2f3e942d81185379b8c);
+        
+
+        marker_7d0d037fd1e99d45cef7caba4456bd35.bindPopup(popup_a50454491b67d0831d3f61f3d97247f0)
+        ;
+
+        
+    
+    
+            marker_7d0d037fd1e99d45cef7caba4456bd35.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff0fbeadeb63e808dd0d9863d9dd751d = L.marker(
+                [14.758949, -61.18694],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_848a3a825e6e65a907ca4a9214a60051 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff0fbeadeb63e808dd0d9863d9dd751d.setIcon(icon_848a3a825e6e65a907ca4a9214a60051);
+        
+    
+        var popup_37bf33edb7a435232a27aea59931eecd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac388125b01ba384f1517cd1e9e51153 = $(`<div id="html_ac388125b01ba384f1517cd1e9e51153" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_Terrain en friche</i></div>`)[0];
+            popup_37bf33edb7a435232a27aea59931eecd.setContent(html_ac388125b01ba384f1517cd1e9e51153);
+        
+
+        marker_ff0fbeadeb63e808dd0d9863d9dd751d.bindPopup(popup_37bf33edb7a435232a27aea59931eecd)
+        ;
+
+        
+    
+    
+            marker_ff0fbeadeb63e808dd0d9863d9dd751d.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_486bda05e82e59d290960a642f51459e = L.marker(
+                [-21.361731, 55.532391],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_8546b7425fe3eb34b60e4389ccffdb2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_486bda05e82e59d290960a642f51459e.setIcon(icon_8546b7425fe3eb34b60e4389ccffdb2d);
+        
+    
+        var popup_a58fadd411864cc2b5589d1b6e78bbfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9972de5b485d16cfbfb5f488aad555d0 = $(`<div id="html_9972de5b485d16cfbfb5f488aad555d0" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  BD THELOT_Ouvrage de signalisation</i></div>`)[0];
+            popup_a58fadd411864cc2b5589d1b6e78bbfd.setContent(html_9972de5b485d16cfbfb5f488aad555d0);
+        
+
+        marker_486bda05e82e59d290960a642f51459e.bindPopup(popup_a58fadd411864cc2b5589d1b6e78bbfd)
+        ;
+
+        
+    
+    
+            marker_486bda05e82e59d290960a642f51459e.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dad4ea0a230e0a2708bdb4883c528c1b = L.marker(
+                [43.388915, -1.659741],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_9340ce13e76ee742b1ef7b3eaaacd4aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dad4ea0a230e0a2708bdb4883c528c1b.setIcon(icon_9340ce13e76ee742b1ef7b3eaaacd4aa);
+        
+    
+        var popup_74cc2cfc14abc3b70d8674453e8e71f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02ecbd50ec1d78f9fe114781d396487a = $(`<div id="html_02ecbd50ec1d78f9fe114781d396487a" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_1 Rue GLOANEC_Immeuble de bureaux</i></div>`)[0];
+            popup_74cc2cfc14abc3b70d8674453e8e71f3.setContent(html_02ecbd50ec1d78f9fe114781d396487a);
+        
+
+        marker_dad4ea0a230e0a2708bdb4883c528c1b.bindPopup(popup_74cc2cfc14abc3b70d8674453e8e71f3)
+        ;
+
+        
+    
+    
+            marker_dad4ea0a230e0a2708bdb4883c528c1b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65177c022f9d39990f6ad149bc26da14 = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_1f09d45ed0054657b67268f4364d81c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_65177c022f9d39990f6ad149bc26da14.setIcon(icon_1f09d45ed0054657b67268f4364d81c1);
+        
+    
+        var popup_71fc8c75cd9647341e9fde61235349a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6a94a55a13257bae69d2b64bf1054f2 = $(`<div id="html_c6a94a55a13257bae69d2b64bf1054f2" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6  R MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_71fc8c75cd9647341e9fde61235349a3.setContent(html_c6a94a55a13257bae69d2b64bf1054f2);
+        
+
+        marker_65177c022f9d39990f6ad149bc26da14.bindPopup(popup_71fc8c75cd9647341e9fde61235349a3)
+        ;
+
+        
+    
+    
+            marker_65177c022f9d39990f6ad149bc26da14.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5db8153e9a31bc8259c1659123b2b0f = L.marker(
+                [49.358762, -0.877732],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_281eaea1a0b0472dd79636ff440da636 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5db8153e9a31bc8259c1659123b2b0f.setIcon(icon_281eaea1a0b0472dd79636ff440da636);
+        
+    
+        var popup_d983a819874ee49a97f3ba275e7196eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee47dcf3d09e8e9182a499e91b19f66b = $(`<div id="html_ee47dcf3d09e8e9182a499e91b19f66b" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Boulevard DE PORT EN BESSIN_Immeuble de bureaux</i></div>`)[0];
+            popup_d983a819874ee49a97f3ba275e7196eb.setContent(html_ee47dcf3d09e8e9182a499e91b19f66b);
+        
+
+        marker_b5db8153e9a31bc8259c1659123b2b0f.bindPopup(popup_d983a819874ee49a97f3ba275e7196eb)
+        ;
+
+        
+    
+    
+            marker_b5db8153e9a31bc8259c1659123b2b0f.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0268600e1d092d298618c397d536bdc6 = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_5b66036aae6fa35aa9440c8ca2658eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0268600e1d092d298618c397d536bdc6.setIcon(icon_5b66036aae6fa35aa9440c8ca2658eea);
+        
+    
+        var popup_17db0dc8c9bb6cbf84e39ea053228fab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4200e8ccdf7b0a2a7eeb1c5260ce8a1 = $(`<div id="html_d4200e8ccdf7b0a2a7eeb1c5260ce8a1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6  R MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_17db0dc8c9bb6cbf84e39ea053228fab.setContent(html_d4200e8ccdf7b0a2a7eeb1c5260ce8a1);
+        
+
+        marker_0268600e1d092d298618c397d536bdc6.bindPopup(popup_17db0dc8c9bb6cbf84e39ea053228fab)
+        ;
+
+        
+    
+    
+            marker_0268600e1d092d298618c397d536bdc6.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27055df738656e3d1b0dea05f6e930d9 = L.marker(
+                [43.38909, -1.659811],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_6dacd8ffbb4ae7bba7adff066555b4df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27055df738656e3d1b0dea05f6e930d9.setIcon(icon_6dacd8ffbb4ae7bba7adff066555b4df);
+        
+    
+        var popup_4e5a04b849ebd9c1379a1221444b0223 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecb1437a3f2fcb7b8c8657369da6d0d3 = $(`<div id="html_ecb1437a3f2fcb7b8c8657369da6d0d3" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_. RADE DE SAINT PIERRE_Ouvrage de signalisation</i></div>`)[0];
+            popup_4e5a04b849ebd9c1379a1221444b0223.setContent(html_ecb1437a3f2fcb7b8c8657369da6d0d3);
+        
+
+        marker_27055df738656e3d1b0dea05f6e930d9.bindPopup(popup_4e5a04b849ebd9c1379a1221444b0223)
+        ;
+
+        
+    
+    
+            marker_27055df738656e3d1b0dea05f6e930d9.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_003954e4690b0f65fb5774a87e337fba = L.marker(
+                [16.235357, -61.62745],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_4fed6e44838257dfeb11eadd8e51f4e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_003954e4690b0f65fb5774a87e337fba.setIcon(icon_4fed6e44838257dfeb11eadd8e51f4e4);
+        
+    
+        var popup_0692ef37b1fba79e4e78c88787403019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5294d53c33c3fc35ce6f91b9c4bd9223 = $(`<div id="html_5294d53c33c3fc35ce6f91b9c4bd9223" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_Terrain en friche</i></div>`)[0];
+            popup_0692ef37b1fba79e4e78c88787403019.setContent(html_5294d53c33c3fc35ce6f91b9c4bd9223);
+        
+
+        marker_003954e4690b0f65fb5774a87e337fba.bindPopup(popup_0692ef37b1fba79e4e78c88787403019)
+        ;
+
+        
+    
+    
+            marker_003954e4690b0f65fb5774a87e337fba.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e3460459bc062254e0ddb1889ffdab9 = L.marker(
+                [43.38909, -1.659811],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_03f7a32115c6b0daac05a8f063aed00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e3460459bc062254e0ddb1889ffdab9.setIcon(icon_03f7a32115c6b0daac05a8f063aed00f);
+        
+    
+        var popup_1527dbb71f2aba8c5aa6ee83ba644238 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b42732f58345c886e5499ae3d8213e44 = $(`<div id="html_b42732f58345c886e5499ae3d8213e44" style="width: 100.0%; height: 100.0%;"><i>SAINT-PIERRE (SAINT-PIERRE-ET-MIQUELON)_Route DE GALANTRY_Garage</i></div>`)[0];
+            popup_1527dbb71f2aba8c5aa6ee83ba644238.setContent(html_b42732f58345c886e5499ae3d8213e44);
+        
+
+        marker_0e3460459bc062254e0ddb1889ffdab9.bindPopup(popup_1527dbb71f2aba8c5aa6ee83ba644238)
+        ;
+
+        
+    
+    
+            marker_0e3460459bc062254e0ddb1889ffdab9.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff3ae561b331a16909e342c1c04f2d90 = L.marker(
+                [50.753831, 2.262365],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_7cf1a278a82b3cf79f3d2d53fed78ae5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff3ae561b331a16909e342c1c04f2d90.setIcon(icon_7cf1a278a82b3cf79f3d2d53fed78ae5);
+        
+    
+        var popup_9e2a463e345bd4577a5887d096c6c82c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de6581335ab48f7b6b55670e6ee1e0df = $(`<div id="html_de6581335ab48f7b6b55670e6ee1e0df" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_quai du commerce_Bâtiment technique</i></div>`)[0];
+            popup_9e2a463e345bd4577a5887d096c6c82c.setContent(html_de6581335ab48f7b6b55670e6ee1e0df);
+        
+
+        marker_ff3ae561b331a16909e342c1c04f2d90.bindPopup(popup_9e2a463e345bd4577a5887d096c6c82c)
+        ;
+
+        
+    
+    
+            marker_ff3ae561b331a16909e342c1c04f2d90.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d551edcc0d145624daef46498f996db = L.marker(
+                [-21.357053, 55.521104],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_6352ba84d04e5c50381c503607f1e85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d551edcc0d145624daef46498f996db.setIcon(icon_6352ba84d04e5c50381c503607f1e85c);
+        
+    
+        var popup_53b9e4f46cfe67b71216ce3c1ceda33b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e64232c831e22fe988672b34a3edda1 = $(`<div id="html_4e64232c831e22fe988672b34a3edda1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Place DU GENERAL DE GAULLE_Trésorerie</i></div>`)[0];
+            popup_53b9e4f46cfe67b71216ce3c1ceda33b.setContent(html_4e64232c831e22fe988672b34a3edda1);
+        
+
+        marker_0d551edcc0d145624daef46498f996db.bindPopup(popup_53b9e4f46cfe67b71216ce3c1ceda33b)
+        ;
+
+        
+    
+    
+            marker_0d551edcc0d145624daef46498f996db.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fe0c1a4836840ee09bfd426886a39c1 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_af0bee42a7127fc5cd62355115084bce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fe0c1a4836840ee09bfd426886a39c1.setIcon(icon_af0bee42a7127fc5cd62355115084bce);
+        
+    
+        var popup_6fd874f183b697e2cfaa9bdc34844117 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58307b71d4431dee3b00d35c9fa62d91 = $(`<div id="html_58307b71d4431dee3b00d35c9fa62d91" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 . AERODROME DE SAINT-PIERRE-POINTE-BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_6fd874f183b697e2cfaa9bdc34844117.setContent(html_58307b71d4431dee3b00d35c9fa62d91);
+        
+
+        marker_0fe0c1a4836840ee09bfd426886a39c1.bindPopup(popup_6fd874f183b697e2cfaa9bdc34844117)
+        ;
+
+        
+    
+    
+            marker_0fe0c1a4836840ee09bfd426886a39c1.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_547d6c11db3019f98e7c2a3451ee4f70 = L.marker(
+                [4.936545, -52.319193],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_bdb7b1606c238817b86e7ec54c8de791 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_547d6c11db3019f98e7c2a3451ee4f70.setIcon(icon_bdb7b1606c238817b86e7ec54c8de791);
+        
+    
+        var popup_7980d3ce6eb9638b76d7e7698ae078b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92cf9e2343d96dd12f834ab364184925 = $(`<div id="html_92cf9e2343d96dd12f834ab364184925" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Gendarmerie</i></div>`)[0];
+            popup_7980d3ce6eb9638b76d7e7698ae078b2.setContent(html_92cf9e2343d96dd12f834ab364184925);
+        
+
+        marker_547d6c11db3019f98e7c2a3451ee4f70.bindPopup(popup_7980d3ce6eb9638b76d7e7698ae078b2)
+        ;
+
+        
+    
+    
+            marker_547d6c11db3019f98e7c2a3451ee4f70.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aafa90993459908b9247873df2b54ba2 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_3dfe63dc497f07717ad11043df8f193d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aafa90993459908b9247873df2b54ba2.setIcon(icon_3dfe63dc497f07717ad11043df8f193d);
+        
+    
+        var popup_de4182964a23d979a5073a566e887891 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32d9b4af54c31ba9d3eefa155062004b = $(`<div id="html_32d9b4af54c31ba9d3eefa155062004b" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  AERODROME DE SAINT PIERRE POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_de4182964a23d979a5073a566e887891.setContent(html_32d9b4af54c31ba9d3eefa155062004b);
+        
+
+        marker_aafa90993459908b9247873df2b54ba2.bindPopup(popup_de4182964a23d979a5073a566e887891)
+        ;
+
+        
+    
+    
+            marker_aafa90993459908b9247873df2b54ba2.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71c9cf9ba4f9ecd4a4d0ab106e331daa = L.marker(
+                [-21.261843, 55.501907],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_87f77c85215a26ee176ff25a55028494 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71c9cf9ba4f9ecd4a4d0ab106e331daa.setIcon(icon_87f77c85215a26ee176ff25a55028494);
+        
+    
+        var popup_207914b45e100ba950ba690a540ea774 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23d493df0bfdba7890c8d7d5bcfee3f1 = $(`<div id="html_23d493df0bfdba7890c8d7d5bcfee3f1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6 Rue MARCEL BONIN_Bâtiment scolaire/enseignement</i></div>`)[0];
+            popup_207914b45e100ba950ba690a540ea774.setContent(html_23d493df0bfdba7890c8d7d5bcfee3f1);
+        
+
+        marker_71c9cf9ba4f9ecd4a4d0ab106e331daa.bindPopup(popup_207914b45e100ba950ba690a540ea774)
+        ;
+
+        
+    
+    
+            marker_71c9cf9ba4f9ecd4a4d0ab106e331daa.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28625590fca29ca42bbc5955b1afe735 = L.marker(
+                [-21.339253, 55.486255],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_cc1951aba6b17efe66feac2b9da279ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28625590fca29ca42bbc5955b1afe735.setIcon(icon_cc1951aba6b17efe66feac2b9da279ee);
+        
+    
+        var popup_a57c9a730e26937569d9bf62bab036d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce3f3c2c9e6dae1d4cab7e552e3d4d5d = $(`<div id="html_ce3f3c2c9e6dae1d4cab7e552e3d4d5d" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Quai DE  L'EPI_Ouvrage de signalisation</i></div>`)[0];
+            popup_a57c9a730e26937569d9bf62bab036d9.setContent(html_ce3f3c2c9e6dae1d4cab7e552e3d4d5d);
+        
+
+        marker_28625590fca29ca42bbc5955b1afe735.bindPopup(popup_a57c9a730e26937569d9bf62bab036d9)
+        ;
+
+        
+    
+    
+            marker_28625590fca29ca42bbc5955b1afe735.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_516d8a7ecd114ccd9ceec6c4f4c42287 = L.marker(
+                [4.936545, -52.319193],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_ddeeab7dcbaa3f3bb140df50e029a8ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_516d8a7ecd114ccd9ceec6c4f4c42287.setIcon(icon_ddeeab7dcbaa3f3bb140df50e029a8ba);
+        
+    
+        var popup_158eb4f2f2075694923d3024d388e9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cba095a0240aaf6960ddfa25846c51b = $(`<div id="html_9cba095a0240aaf6960ddfa25846c51b" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_R SASCO_Champ d'exercice</i></div>`)[0];
+            popup_158eb4f2f2075694923d3024d388e9b0.setContent(html_9cba095a0240aaf6960ddfa25846c51b);
+        
+
+        marker_516d8a7ecd114ccd9ceec6c4f4c42287.bindPopup(popup_158eb4f2f2075694923d3024d388e9b0)
+        ;
+
+        
+    
+    
+            marker_516d8a7ecd114ccd9ceec6c4f4c42287.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f61448e45429ed5fc10987a84a1f26c7 = L.marker(
+                [49.343822, -0.746442],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_cc7f472ed1d983147beb7eeb2e8466b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f61448e45429ed5fc10987a84a1f26c7.setIcon(icon_cc7f472ed1d983147beb7eeb2e8466b9);
+        
+    
+        var popup_4343892a46419050b2ab01bb65a5626e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eebb9b4dcadc992e59bb82c92d2a6e41 = $(`<div id="html_eebb9b4dcadc992e59bb82c92d2a6e41" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_BD PORT EN BESSIN_Immeuble de bureaux</i></div>`)[0];
+            popup_4343892a46419050b2ab01bb65a5626e.setContent(html_eebb9b4dcadc992e59bb82c92d2a6e41);
+        
+
+        marker_f61448e45429ed5fc10987a84a1f26c7.bindPopup(popup_4343892a46419050b2ab01bb65a5626e)
+        ;
+
+        
+    
+    
+            marker_f61448e45429ed5fc10987a84a1f26c7.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8505f7d45dd0f54dc9e7dd5d5c1d9b07 = L.marker(
+                [-21.357053, 55.521104],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_303525d18a8742beaa9bfbbf6fc9833c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8505f7d45dd0f54dc9e7dd5d5c1d9b07.setIcon(icon_303525d18a8742beaa9bfbbf6fc9833c);
+        
+    
+        var popup_dd7c53171d066530e0538a4e8ac33479 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7849e18ba973d06d76cbc78f8c5e6aa1 = $(`<div id="html_7849e18ba973d06d76cbc78f8c5e6aa1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  PL DU GENERAL DE GAULLE_Trésorerie</i></div>`)[0];
+            popup_dd7c53171d066530e0538a4e8ac33479.setContent(html_7849e18ba973d06d76cbc78f8c5e6aa1);
+        
+
+        marker_8505f7d45dd0f54dc9e7dd5d5c1d9b07.bindPopup(popup_dd7c53171d066530e0538a4e8ac33479)
+        ;
+
+        
+    
+    
+            marker_8505f7d45dd0f54dc9e7dd5d5c1d9b07.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ce62ca5af088971238d2904c1cce809 = L.marker(
+                [-21.318925, 55.427868],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_bd1e3cf6774b08cb66b70d7872ccd3a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ce62ca5af088971238d2904c1cce809.setIcon(icon_bd1e3cf6774b08cb66b70d7872ccd3a2);
+        
+    
+        var popup_87b6a36342746adb33bb973aa0809753 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8099f45a79d038f3c8fef16680de3e3 = $(`<div id="html_b8099f45a79d038f3c8fef16680de3e3" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  AERODROME DE SAINT PIERRE POINTE BLANCHE_Plateforme aéronautique</i></div>`)[0];
+            popup_87b6a36342746adb33bb973aa0809753.setContent(html_b8099f45a79d038f3c8fef16680de3e3);
+        
+
+        marker_9ce62ca5af088971238d2904c1cce809.bindPopup(popup_87b6a36342746adb33bb973aa0809753)
+        ;
+
+        
+    
+    
+            marker_9ce62ca5af088971238d2904c1cce809.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c86a52df813e224dbeb87bcd061c7436 = L.marker(
+                [49.965976, 1.220595],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_5b1d735455218b9278a0a5457982a6e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c86a52df813e224dbeb87bcd061c7436.setIcon(icon_5b1d735455218b9278a0a5457982a6e4);
+        
+    
+        var popup_cc6a8c632fe733a66a7a99f10ecafcff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bf38bebbd89d3be33636f1035409bce = $(`<div id="html_9bf38bebbd89d3be33636f1035409bce" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_8 R DES PETITS PECHEURS_Immeuble de bureaux</i></div>`)[0];
+            popup_cc6a8c632fe733a66a7a99f10ecafcff.setContent(html_9bf38bebbd89d3be33636f1035409bce);
+        
+
+        marker_c86a52df813e224dbeb87bcd061c7436.bindPopup(popup_cc6a8c632fe733a66a7a99f10ecafcff)
+        ;
+
+        
+    
+    
+            marker_c86a52df813e224dbeb87bcd061c7436.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1442f812ebc3ca14fde852506974d59 = L.marker(
+                [-21.314583, 55.429282],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_0177efc5b4294e9a7b57dd8d9720b569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1442f812ebc3ca14fde852506974d59.setIcon(icon_0177efc5b4294e9a7b57dd8d9720b569);
+        
+    
+        var popup_5ce2244fe36ed08daeec38e9a3ddeaad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1f0525b22dad2198b234b85fde3d2a4 = $(`<div id="html_e1f0525b22dad2198b234b85fde3d2a4" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0  R DES PETITS PECHEURS_Immeuble de bureaux</i></div>`)[0];
+            popup_5ce2244fe36ed08daeec38e9a3ddeaad.setContent(html_e1f0525b22dad2198b234b85fde3d2a4);
+        
+
+        marker_d1442f812ebc3ca14fde852506974d59.bindPopup(popup_5ce2244fe36ed08daeec38e9a3ddeaad)
+        ;
+
+        
+    
+    
+            marker_d1442f812ebc3ca14fde852506974d59.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a6f99e3ebc073160d6ed5596521341a = L.marker(
+                [49.018048, -0.029116],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_a493596c4d3315d7c0de9e3d0e5c14f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a6f99e3ebc073160d6ed5596521341a.setIcon(icon_a493596c4d3315d7c0de9e3d0e5c14f8);
+        
+    
+        var popup_be953ca473216297f32b0c7d6f7183fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_091d03b6592f39d8f6cca712d116bac1 = $(`<div id="html_091d03b6592f39d8f6cca712d116bac1" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_1  RUE DU 11 NOVEMBRE_Immeuble de bureaux</i></div>`)[0];
+            popup_be953ca473216297f32b0c7d6f7183fc.setContent(html_091d03b6592f39d8f6cca712d116bac1);
+        
+
+        marker_9a6f99e3ebc073160d6ed5596521341a.bindPopup(popup_be953ca473216297f32b0c7d6f7183fc)
+        ;
+
+        
+    
+    
+            marker_9a6f99e3ebc073160d6ed5596521341a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dbc0342bb9167daaccb955ffbb348f0 = L.marker(
+                [-21.346461, 55.48137],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_4f49b8f989b3a8e928b9ad3b2a25fd8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9dbc0342bb9167daaccb955ffbb348f0.setIcon(icon_4f49b8f989b3a8e928b9ad3b2a25fd8f);
+        
+    
+        var popup_1210b28137e9db17bced3497805e2ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a4d415e0f00ada82fb09a71f99dd6e6 = $(`<div id="html_9a4d415e0f00ada82fb09a71f99dd6e6" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_0 Rue DES PETITS PECHEURS_Immeuble de bureaux</i></div>`)[0];
+            popup_1210b28137e9db17bced3497805e2ce8.setContent(html_9a4d415e0f00ada82fb09a71f99dd6e6);
+        
+
+        marker_9dbc0342bb9167daaccb955ffbb348f0.bindPopup(popup_1210b28137e9db17bced3497805e2ce8)
+        ;
+
+        
+    
+    
+            marker_9dbc0342bb9167daaccb955ffbb348f0.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39900ae911c8860c95692c5d4aec6b3b = L.marker(
+                [-21.342248, 55.468503],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_2f7c1ba675cfd4566e9f6183ba872afc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39900ae911c8860c95692c5d4aec6b3b.setIcon(icon_2f7c1ba675cfd4566e9f6183ba872afc);
+        
+    
+        var popup_98c0e00465a4a2f5f2dab007e056629b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f687f9609f47ec6e0eacefb5ec5d0e0f = $(`<div id="html_f687f9609f47ec6e0eacefb5ec5d0e0f" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_1  R GLOANEC_Immeuble de bureaux</i></div>`)[0];
+            popup_98c0e00465a4a2f5f2dab007e056629b.setContent(html_f687f9609f47ec6e0eacefb5ec5d0e0f);
+        
+
+        marker_39900ae911c8860c95692c5d4aec6b3b.bindPopup(popup_98c0e00465a4a2f5f2dab007e056629b)
+        ;
+
+        
+    
+    
+            marker_39900ae911c8860c95692c5d4aec6b3b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5452f9450fb205b4719d1156191939f = L.marker(
+                [43.075507, 5.802132],
+                {}
+            ).addTo(map_b39b2235b9d3107eb56f763eaeaa8fb0);
+        
+    
+            var icon_557909476f40bd8b0d44e41deb38b129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5452f9450fb205b4719d1156191939f.setIcon(icon_557909476f40bd8b0d44e41deb38b129);
+        
+    
+        var popup_58f0468f023ac8e276d4a843840ebb38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb0f1097a67300fbf3962fd32adfc675 = $(`<div id="html_eb0f1097a67300fbf3962fd32adfc675" style="width: 100.0%; height: 100.0%;"><i>Saint-Pierre_6_Etendue d'eau</i></div>`)[0];
+            popup_58f0468f023ac8e276d4a843840ebb38.setContent(html_eb0f1097a67300fbf3962fd32adfc675);
+        
+
+        marker_a5452f9450fb205b4719d1156191939f.bindPopup(popup_58f0468f023ac8e276d4a843840ebb38)
+        ;
+
+        
+    
+    
+            marker_a5452f9450fb205b4719d1156191939f.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
