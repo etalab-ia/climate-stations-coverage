@@ -1,6 +1,6 @@
 """
-Manual mapping of potential urban sites characterized with low station coverage and medium State's public coverage
-identified with basic map screening"
+Some pre-selected urban sites characterized with low station coverage and medium State's buildings coverage.
+These sites have been chosen after a naive screening of maps featuring both coverages.
 """
 
 low_coverage_sites = {
