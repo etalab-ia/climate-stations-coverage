@@ -2,7 +2,7 @@
 Some pre-selected urban sites characterized with low station coverage and medium State's buildings coverage.
 These sites have been chosen after a naive screening of maps featuring both coverages.
 Warning: this first screening is non-exhaustive and does not include all DROM-COM. 
-Warning: this first prototype does not manage homonyms
+Warning: this first prototype does not manage homonyms and case variations/variations of diacritics
 """
 
 low_coverage_sites = {
