@@ -1,6 +1,7 @@
 """
 Some pre-selected urban sites characterized with low station coverage and medium State's buildings coverage.
 These sites have been chosen after a naive screening of maps featuring both coverages.
+Warning : this first screening is non-exhaustive and does not include DROM-COM. 
 """
 
 low_coverage_sites = {
@@ -23,6 +24,7 @@ low_coverage_sites = {
     "Charente-Maritime": ["Saintes", "Jonzac"],
     "Cher": ["Aubigny-sur-Nère", "Vierzon"],
     "Corrèze": ["Tulle", "Brive-la-gaillarde"],
+    "Corse du sud" : [],
     "Côte-d'Or": ["Montbard", "Beaune"],
     "Côtes-d'Armor": ["Guingamp", "Loudéac"],
     "Creuse": ["Aubusson", "la Souterraine"],
@@ -37,6 +39,7 @@ low_coverage_sites = {
     "Gard": ["Nîmes"],
     "Gers": ["Auch", "Vic-Fezensac", "L'Isle-Jourdain", "Lectoure"],
     "Gironde": ["Langon"],
+    "Haute-Corse" : ["Calvi"],
     "Haute-Garonne": ["Saint-Gaudens", "Bagnères-de-Luchon", "Montréjeau"],
     "Haute-Loire": ["Brioude", "LaChaise-Dieu", "Blesle"],
     "Haute-Marne": ["Saint-Dizier", "Langres", "Prauthoy"],
