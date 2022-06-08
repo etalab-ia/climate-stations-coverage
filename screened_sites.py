@@ -1,7 +1,7 @@
 """
 Some pre-selected urban sites characterized with low station coverage and medium State's buildings coverage.
 These sites have been chosen after a naive screening of maps featuring both coverages.
-Warning : this first screening is non-exhaustive and does not include DROM-COM. 
+Warning : this first screening is non-exhaustive and does not include all DROM-COM. 
 """
 
 low_coverage_sites = {
@@ -91,12 +91,15 @@ low_coverage_sites = {
     "Tarn": ["Albi", "Gaillac"],
     "Tarn-et-Garonne": [],
     "Val-de-Marne": ["Créteil"],
-    "Vald’Oise": [],
+    "Val d'Oise": [],
     "Var": ["Draguignan"],
     "Vaucluse": ["Carpentras"],
-    "Vendée": ["Noirmoutier-en-l’île", "Fromentine", "Les Sables d’Olonne"],
+    "Vendée": ["Noirmoutier-en-l'île", "Fromentine", "Les Sables d'Olonne"],
     "Vienne": ["Montmorillon"],
     "Vosges": ["Neufchâteau"],
     "Yonne": ["Auxerre", "Avallon"],
     "Yvelines": [],
+    "La Réunion": ["Saint-Pierre", "Saint-Denis"],
+    "Martinique" : ["Sainte-Luce"],
+    "Guadeloupe": [],
 }
