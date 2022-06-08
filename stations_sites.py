@@ -6,6 +6,7 @@ from typing import List, Tuple
 import folium
 from screened_sites import low_coverage_sites
 
+# INSEE code for departements and codes
 DEPARTEMENTS = np.concatenate(
     (
         np.arange(1, 20), # No number 20 (old for Corsica)
